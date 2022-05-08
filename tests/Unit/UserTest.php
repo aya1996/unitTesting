@@ -6,7 +6,7 @@ use App\Models\User;
 
 class UserTest extends \PHPUnit\Framework\TestCase
 {
-    protected $user;
+    public $user;
 
     protected function setUp(): void
     {
@@ -17,7 +17,9 @@ class UserTest extends \PHPUnit\Framework\TestCase
     public function that_we_can_get_first_name()
     {
 
+
         $this->user->setFirstName('aya');
+
         $this->assertEquals($this->user->getFirstName(), 'aya');
     }
     /** @test */

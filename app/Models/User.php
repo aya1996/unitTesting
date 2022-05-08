@@ -4,9 +4,9 @@ namespace App\Models;
 
 class User
 {
-    protected string $first_name;
-    protected string $last_name;
-    protected string $email;
+    public string $first_name;
+    public string $last_name;
+    public string $email;
     public function setFirstName($firstName)
     {
         $this->first_name = trim($firstName);
